@@ -8,10 +8,10 @@ void deleteByName();
 
 static int count_service = 0;	// Total number of service requests
 
-
 int main()
 {
 	int service;		// a variable for storing user's request
+	size = 0;
 	do
 	{
         printf("============ Telephone Book Management ============");
@@ -30,38 +30,3 @@ int main()
 	return 0;
 }
 
-/*****************
-** Your code..
-** This function should be implemented in register.c
-*************************/
-void registerPhoneData()
-{
-    printf("Registration\n");
-}
-
-/*****************
-** Your code..
-** This function should be implemented in search.c
-*************************/
-void printAll()
-{
-    printf("Print all contants in the PhoneBook\n");
-}
-
-/*****************
-** Your code..
-** This function should be implemented in search.c
-*************************/
-void searchByName()
-{
-    printf("Search by Name\n");
-}
-
-/*****************
-** Your code..
-** This function should be implemented in delete.c
-*************************/
-void deleteByName()
-{
-    printf("Deletion is done\n");
-}
