@@ -1,6 +1,6 @@
 // array of sturcure
 # define MAX 50
-extern int size;
+//extern int size;
 typedef struct Contact
 {
     char Name[10];
