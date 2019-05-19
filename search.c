@@ -5,10 +5,10 @@
 extern int size;
 extern CONTACT PhoneBook[MAX];
 
-int flag = 0;
 
 void searchByName()
 {
+    int flag = 0;
     char name[10] = {0,};
     printf(">> Enter a name to search:");
     scanf("%9s", name);
