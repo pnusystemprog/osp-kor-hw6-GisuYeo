@@ -10,3 +10,4 @@ void printAll()
         printf("%s\t\t%s\n", PhoneBook[i].Name, PhoneBook[i].PhoneNumber);
     }
 }
+
