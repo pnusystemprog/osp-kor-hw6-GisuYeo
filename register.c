@@ -25,14 +25,15 @@ void registerPhoneData()
         return;
     }
 
+    if(size >= MAX){
+         return;
+    }
+
     printf("New User Name: ");
     scanf("%9s", PhoneBook[size].Name);
     printf("Phone Number:");
     scanf("%14s", PhoneBook[size].PhoneNumber);
 
-    if(size >= MAX){
-         return;
-    }
     size++;
     
     printf("Registration\n");
