@@ -5,6 +5,8 @@
 extern int size;
 extern CONTACT PhoneBook[MAX];
 
+int flag = 0;
+
 void searchByName()
 {
     char name[10] = {0,};
@@ -14,9 +16,10 @@ void searchByName()
     for(int i = 0; i < size; i++){
         if(strcmp(name, PhoneBook[i].Name) == 0){
             printf("%s\t\t%s\n", PhoneBook[i].Name, PhoneBook[i].PhoneNumber);
-            return;
+            flag++;
         }
     }
-    printf("Oops! %s is not in the PhoneBook.\n", name);
+    if(flag <= 0)
+        printf("Oops! %s is not in the PhoneBook.\n", name);
 }
 
