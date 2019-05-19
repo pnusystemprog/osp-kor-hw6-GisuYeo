@@ -8,6 +8,9 @@ void deleteByName();
 
 static int count_service = 0;	// Total number of service requests
 
+CONTACT PhoneBook[MAX];   // struct pointer array
+int size;  // store the actual numbers of PhoneBook
+
 int main()
 {
 	int service;		// a variable for storing user's request
